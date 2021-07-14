@@ -1,0 +1,19 @@
+{
+  "name": "martinnataf_3_13012021",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css --style expanded"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MartinNATAF/MartinNataf_3_13012021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MartinNATAF/MartinNataf_3_13012021/issues"
+  },
+  "homepage": "https://github.com/MartinNATAF/MartinNataf_3_13012021#readme"
+}

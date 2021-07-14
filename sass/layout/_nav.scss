@@ -1,0 +1,40 @@
+.restaurant {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    &__card {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        &--txt {
+            display: flex;
+            justify-content: space-around;
+            height: 80px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            z-index: 0;
+            background-color: white;
+            &-top {
+                margin-top: 20px;
+                margin-bottom: 5px;
+            }
+            &-bottom {
+                margin-top: 5px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+.shrink {
+    position: relative;
+    overflow: visible;
+    left: 6%;
+    flex-shrink: 0;
+    width: 105%;
+    bottom: 15%;
+    background-color: white;
+}
+
