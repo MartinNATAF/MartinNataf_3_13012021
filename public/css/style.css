@@ -1,26 +1,15 @@
 @charset "UTF-8";
-.body {
-  animation-duration: 3s;
-  animation-name: loader_opacity;
-}
-
-@keyframes loader_opacity {
-  from {
-    opacity: 0;
-  }
-  60% {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 .loader {
   animation-duration: 3s;
   animation-name: loader_style;
   opacity: 0;
   display: flex;
   justify-content: space-around;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: white;
 }
 
 .circle_blue {
@@ -64,12 +53,15 @@
 @keyframes loader_style {
   from {
     opacity: 1;
+    z-index: 5000;
   }
   60% {
     opacity: 1;
+    z-index: 5000;
   }
   to {
     opacity: 0;
+    z-index: 0;
   }
 }
 @keyframes rotate_test {
@@ -195,6 +187,7 @@ h1, h2, h3, h4, h5 {
   height: 20%;
   display: flex;
   margin: 0 auto;
+  z-index: 1;
 }
 @media screen and (min-width: 1080px) {
   .fonctionnement__button {
@@ -209,7 +202,7 @@ h1, h2, h3, h4, h5 {
   position: relative;
   top: 35%;
   left: 5%;
-  z-index: 1;
+  z-index: 2;
 }
 .fonctionnement__button--choice {
   display: flex;
@@ -230,8 +223,8 @@ h1, h2, h3, h4, h5 {
   color: white;
   margin: 0;
   position: relative;
-  top: 2%;
-  left: 30%;
+  top: 10%;
+  left: 35%;
 }
 
 .color-logo {
@@ -421,6 +414,7 @@ h1, h2, h3, h4, h5 {
   margin-left: 5%;
   margin-right: 5%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 @media screen and (max-width: 1080px) {
@@ -432,7 +426,7 @@ h1, h2, h3, h4, h5 {
 .restaurant__card {
   overflow: hidden;
   height: 260px;
-  width: 20%;
+  width: 345px;
   border-radius: 20px 20px 20px 20px;
   position: relative;
 }
@@ -509,7 +503,7 @@ h1, h2, h3, h4, h5 {
   bottom: 35px;
 }
 
-.test {
+.first_place {
   position: relative;
   z-index: 2;
 }
@@ -569,7 +563,6 @@ h1, h2, h3, h4, h5 {
 
 .position_footer_txt {
   position: relative;
-  bottom: 33%;
   left: 10%;
 }
 
@@ -653,7 +646,11 @@ h1, h2, h3, h4, h5 {
   position: relative;
   bottom: 49px;
   height: 100%;
-  margin-top: 30px;
+}
+@media screen and (max-width: 1080px) {
+  .main__partie2 {
+    margin-top: 30px;
+  }
 }
 .main__partie2--title {
   margin-left: 20px;
@@ -688,7 +685,11 @@ h1, h2, h3, h4, h5 {
   position: relative;
   bottom: 49px;
   height: 100%;
-  margin-top: 30px;
+}
+@media screen and (max-width: 1080px) {
+  .main__partie3 {
+    margin-top: 30px;
+  }
 }
 .main__partie3--title {
   margin-left: 20px;
